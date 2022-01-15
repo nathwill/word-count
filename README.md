@@ -2,7 +2,7 @@
 
 ### why?
 i put this together to dissuade myself from trying to guess ahead while
-learning to copy morse code.
+learning to head-copy morse code.
 
 ### usage
 
