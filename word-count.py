@@ -13,7 +13,7 @@ args = parser.parse_args()
 
 # load word list from file
 def get_words(word_file):
-    return open(word_file).readlines()
+    return word_file.read().strip().split("\n")
 
 # map word count for char depth
 def get_word_dict_at_depth(word_list = [], char_depth = 1):
@@ -31,7 +31,7 @@ def get_word_dict_at_depth(word_list = [], char_depth = 1):
     return word_dict
 
 # compute avg word count at chart depth
-w = args.filename.read().strip().split("\n")
+w = get_words(args.filename)
 
 
 depth_dict = {}
